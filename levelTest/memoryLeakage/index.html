@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="one">one</div>
+    <div id="two">two</div>
+    <script>
+        // const one = document.getElementById("one");
+        // const two = document.getElementById("two");
+
+        // // one.addEventListener("click", function () {
+        // //     // 이미 전역에서 two에 해당하는 node객체를 가지고 있기 때문에
+        // //     // 계속 같은 값을 참조
+        // //     two.remove();
+        // //     console.log(two);
+        // // })
+
+        one.addEventListener("click", function () {
+            // 클릭 이벤트가 발생했을 때 two라는 node객체가 있다면 삭제하도록 수정
+            const two = document.getElementById("two");
+            if (two !== null && two != undefined) {
+                two.remove();
+                console.log(two);
+            }
+        });
+
+    </script>
+</body>
+
+</html>

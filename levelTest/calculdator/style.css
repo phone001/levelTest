@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: 300px;
+    background-color: rgb(80, 78, 83);
+}
+
+.input-form>div {
+    display: flex;
+    align-self: center;
+    outline: none;
+    color: white;
+    height: 50px;
+    padding: 3px 6px;
+}
+
+input[type=button] {
+    border: 1px solid black;
+    color: white
+}
+
+
+.calcul-btn {
+    width: 20%;
+    height: 50px;
+    background-color: rgb(226, 154, 56);
+}
+
+.dial-btn {
+    width: calc(100%/4);
+    height: 50px;
+    background-color: rgb(128, 127, 128);
+}
+
+.zero-btn {
+    width: 154px;
+    height: 50px;
+}
+
+.ac-btn {
+    width: 233px;
+    height: 50px;
+}
